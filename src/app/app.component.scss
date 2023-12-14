@@ -1,0 +1,17 @@
+form > div{
+    border: 5px solid transparent;
+    transition:0.2s;
+    &.error, &.error input{
+        border-color: #ff0000;
+        animation: blinkBorder 0.5s infinite alternate;
+    }
+}
+
+@keyframes blinkBorder {
+    from{
+        border-color: rgba(255,0,0,0.2);
+    }
+    to{
+        border-color: rgba(255,0,0,1)
+    }
+}
